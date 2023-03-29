@@ -1,5 +1,11 @@
 package Registro;
 
+import java.util.Scanner;
+import java.util.Random;
+
+import static Registro.RegistroUsuario.nombres;
+import static Registro.RegistroUsuario.scanner;
+
 public class validarCampos {
     public static String compruebaNombre() {
         String nombre;

@@ -3,7 +3,7 @@ package Registro;
 import java.util.Scanner;
 import java.util.Random;
 
-import static Registro.ValidarCampos.*;
+import static Registro.validarCampos.*;
 
 /**
  * @author Tomas
