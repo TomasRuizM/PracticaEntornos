@@ -1,13 +1,8 @@
 package Registro;
 
-import java.util.Scanner;
-import java.util.Random;
+import static Registro.RegistroUsuario.*;
 
-import static Registro.RegistroUsuario.nombres;
-import static Registro.RegistroUsuario.scanner;
-
-public class validarCampos {
-<<<<<<< HEAD
+public class ValidarCampos {
     public static String compruebaNombre() {
         String nombre;
         boolean esValido;
@@ -44,7 +39,7 @@ public class validarCampos {
             }
         } while (!esValido);
         return email;
-=======
+    }
 
     public static String compruebaPassword() {
         String password;
@@ -77,6 +72,7 @@ public class validarCampos {
             }
         } while (!codigoUsuario.equals(codigo));
         return codigo;
->>>>>>> 5544543dfe9c063739cd5ca19e56961a5d4e77b3
+
     }
 }
+
