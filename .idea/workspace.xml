@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad5d3a9-c32c-45e9-ab04-7574bd8be471" name="Changes" comment="Resuelto problema. No nos dejaba hacer merge">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cad5d3a9-c32c-45e9-ab04-7574bd8be471" name="Changes" comment="Mas comentarios en la clase RegistroUsuario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registro/ValidarCampos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registro/ValidarCampos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,6 +43,9 @@
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="Registro.RegistroUsuario" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Registro" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680135576599</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mas comentarios en la clase RegistroUsuario">
+      <created>1680138446597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680138446597</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +116,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Creacion de las clases" />
     <MESSAGE value="Resuelto problema. No nos dejaba hacer merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resuelto problema. No nos dejaba hacer merge" />
+    <MESSAGE value="Mas comentarios en la clase RegistroUsuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mas comentarios en la clase RegistroUsuario" />
   </component>
 </project>
