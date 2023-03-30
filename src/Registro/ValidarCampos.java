@@ -10,18 +10,27 @@ public class ValidarCampos {
     private static String codigo = "";
     private static String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
 
-    // Metodo para comprobar si el nombre és válido.
+    /**
+     * @author Metodo para comprobar si el nombre és válido.
+     * @return Constructor
+     */
     public static String compruebaNombre(String [] usuarios) {
         do {
             System.out.print("Introduce tu nombre: ");
             nombreUsuario = scanner.nextLine();
             esValido = true;
-            // Comprobamos que cumple con los requisitos.
+            /**
+             * @author Comprobamos que cumple con los requisitos.
+             * @return Constructor
+             */
             if (!nombreUsuario.matches("^[A-Z][a-z]+[_-]\\d{3}$") || nombreUsuario.length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 esValido = false;
             }
-            // Comprobar que no esté en uso.
+            /**
+             * @author Comprobar que no esté en uso.
+             * @return Constructor
+             */
             for (String n : nombres) {
                 if (n.equals(nombreUsuario)) {
                     System.out.println("El nombre ya está en uso.");
@@ -32,8 +41,10 @@ public class ValidarCampos {
         } while (!esValido);
         return nombreUsuario;
     }
-
-    // Metodo para comprobar si el email és válido.
+    /**
+     * @author Metodo para comprobar si el email és válido.
+     * @return Constructor
+     */
     public static String compruebaEmail() {
         boolean esValido;
         do {
@@ -79,7 +90,10 @@ public class ValidarCampos {
         return codigo;
     }
 
-    // Constructor
+    /**
+     * @author Hernán Sandoval
+     * @return Constructor
+     */
     public ValidarCampos(String nombreUsuario, String email, String codigo, String password, String caracteres) {
         this.nombreUsuario = nombreUsuario;
         this.email = email;
