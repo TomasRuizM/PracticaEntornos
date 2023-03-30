@@ -1,7 +1,9 @@
 package Registro;
 
 /**
- * Imports necesarios para que funcione la clase
+ * Imports necesarios para que funcione la clase.
+ * @author Tomas
+ *
  */
 
 import java.util.Scanner;
@@ -19,7 +21,9 @@ public class RegistroUsuario {
     static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
 
     /**
-     * Main donde se llama a los atributos de la clase ValidarCampos
+     * Main donde se llama a los atributos de la clase ValidarCampos.
+     * @author Tomas
+     *
      */
     public static void main(String[] args) {
         String nombreUsuario = compruebaNombre();
@@ -33,6 +37,9 @@ public class RegistroUsuario {
 
     /**
      * Metodo con las sentencias que operan con los objetos de la clase ValidarCampos
+     * @return Devuelve los datos introducidos por el usuario
+     * @author Tomas
+     *
      */
 
     private static void init(String nombreUsuario, String email, String password, String codigo) {
