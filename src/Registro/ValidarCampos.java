@@ -10,6 +10,10 @@ import static Registro.RegistroUsuario.*;
  * Tambien tiene los atributos encapsulados con su respectivos constructores
  */
 public class ValidarCampos {
+    /**
+     * @return Declaración de todo los atributos
+     * @author Hernan
+     */
 
     private static String nombreDeUsuario;
     private static boolean esValido;
@@ -20,12 +24,21 @@ public class ValidarCampos {
 
     private static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
 
+    /**
+     * @return Metodo para comprobar el nombre.
+     * @author Hernan
+     */
 
     public static String compruebaNombre(String nombreDeUsuario) {
         do {
             System.out.print("Introduce tu nombre: ");
             setNombreDeUsuario(scanner.nextLine());
             setEsValido(true);
+            /**
+             * @return El nombre debe cumplir los requisitos y no debe existir.
+             * @author Hernan
+             */
+
             if (!getNombreDeUsuario().matches("^[A-Z][a-z]+[_-]\\d{3}$") || getNombreDeUsuario().length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 setEsValido(false);
@@ -41,12 +54,21 @@ public class ValidarCampos {
         return getNombreDeUsuario();
     }
 
+    /**
+     * @return Metodo para comprobar el email.
+     * @author Hernan
+     */
 
     public static String compruebaEmail() {
         do {
             System.out.print("Introduce tu email: ");
             setEmail(scanner.nextLine());
             setEsValido(true);
+            /**
+             * @return El email debe cumplir los requisitos.
+             * @author Hernan
+             */
+
             if (!getEmail().matches("^[a-zA-Z0-9._%+-]+@(paucasesnovescifp|yahoo|gmail|hotmail)\\.(com|es|cat)$")) {
                 System.out.println("El email no cumple con los requisitos.");
                 setEsValido(false);
