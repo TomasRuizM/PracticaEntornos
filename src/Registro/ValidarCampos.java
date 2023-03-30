@@ -3,31 +3,35 @@ package Registro;
 import static Registro.RegistroUsuario.*;
 
 public class ValidarCampos {
+    private static String nombreUsuario;
+    private static boolean esValido;
+    private static String email;
+    private static String password;
+    private static String codigo = "";
+    private static String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
     public static String compruebaNombre() {
-        String nombre;
         boolean esValido;
         do {
             System.out.print("Introduce tu nombre: ");
-            nombre = scanner.nextLine();
+            nombreUsuario = scanner.nextLine();
             esValido = true;
-            if (!nombre.matches("^[A-Z][a-z]+[_-]\\d{3}$") || nombre.length() > 16) {
+            if (!nombreUsuario.matches("^[A-Z][a-z]+[_-]\\d{3}$") || nombreUsuario.length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 esValido = false;
             }
             for (String n : nombres) {
-                if (n.equals(nombre)) {
+                if (n.equals(nombreUsuario)) {
                     System.out.println("El nombre ya está en uso.");
                     esValido = false;
                     break;
                 }
             }
         } while (!esValido);
-        return nombre;
+        return nombreUsuario;
     }
 
 
     public static String compruebaEmail() {
-        String email;
         boolean esValido;
         do {
             System.out.print("Introduce tu email: ");
@@ -42,7 +46,6 @@ public class ValidarCampos {
     }
 
     public static String compruebaPassword() {
-        String password;
         boolean esValido;
         do {
             System.out.print("Introduce tu password: ");
@@ -57,8 +60,6 @@ public class ValidarCampos {
     }
 
     public static String generaCodigoSeguridad() {
-        String codigo = "";
-        String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
         for (int i = 0; i < 8; i++) {
             codigo += caracteres.charAt(random.nextInt(caracteres.length()));
         }
@@ -72,7 +73,6 @@ public class ValidarCampos {
             }
         } while (!codigoUsuario.equals(codigo));
         return codigo;
-
     }
 }
 
