@@ -36,9 +36,9 @@ public class RegistroUsuario {
     }
 
     /**
-     * Metodo con las sentencias que operan con los objetos de la clase ValidarCampos
-     * @return Devuelve los datos introducidos por el usuario
+     * Metodo con las sentencias que operan con los objetos de la clase ValidarCampos.
      * @author Tomas
+     * @return Devuelve los datos introducidos por el usuario
      *
      */
 
