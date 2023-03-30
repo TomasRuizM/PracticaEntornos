@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cad5d3a9-c32c-45e9-ab04-7574bd8be471" name="Changes" comment="Mas comentarios en la clase RegistroUsuario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Registro/ValidarCampos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registro/ValidarCampos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
