@@ -18,7 +18,7 @@ import static Registro.ValidarCampos.*;
 public class RegistroUsuario {
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
-    static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
+    private static String nombreUsuario;
 
     /**
      * Main donde se llama a los atributos de la clase ValidarCampos.
@@ -26,12 +26,16 @@ public class RegistroUsuario {
      *
      */
     public static void main(String[] args) {
-        String nombreUsuario = compruebaNombre();
+        String nombreUsuario = compruebaNombre(getNombreDeUsuario());
         String email = compruebaEmail();
         String password = compruebaPassword();
         String codigo = generaCodigoSeguridad();
 
         //Llamada al metodo donde estan los prints
+        extracted(nombreUsuario, email, password, codigo);
+    }
+
+    private static void extracted(String nombreUsuario, String email, String password, String codigo) {
         init(nombreUsuario, email, password, codigo);
     }
 

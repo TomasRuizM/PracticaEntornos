@@ -1,36 +1,44 @@
 package Registro;
 
 import static Registro.RegistroUsuario.*;
-
+/**
+ * @author Ruben
+ *
+ * @return Esta clase consta de 4 metodos que pediran a partir de scaners informacion como el nombre
+ * y tendra que comprobar que el nombre no existe en la base de datos y a la vez que toda la informacion
+ * introducida por teclado cumpla con el patron establecido.
+ * Tambien tiene los atributos encapsulados con su respectivos constructores
+ */
 public class ValidarCampos {
-    private static String nombre ;
-    private static String nombreUsuario;
+
+    private static String nombreDeUsuario;
     private static boolean esValido;
     private static String email;
     private static String password;
     private static String codigo = "";
     private static String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
 
+    private static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
 
 
-    public static String compruebaNombre() {
+    public static String compruebaNombre(String nombreDeUsuario) {
         do {
             System.out.print("Introduce tu nombre: ");
-            setNombreUsuario(scanner.nextLine());
+            setNombreDeUsuario(scanner.nextLine());
             setEsValido(true);
-            if (!getNombreUsuario().matches("^[A-Z][a-z]+[_-]\\d{3}$") || getNombreUsuario().length() > 16) {
+            if (!getNombreDeUsuario().matches("^[A-Z][a-z]+[_-]\\d{3}$") || getNombreDeUsuario().length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 setEsValido(false);
             }
             for (String n : nombres) {
-                if (n.equals(getNombreUsuario())) {
+                if (n.equals(getNombreDeUsuario())) {
                     System.out.println("El nombre ya está en uso.");
                     setEsValido(false);
                     break;
                 }
             }
         } while (!isEsValido());
-        return getNombreUsuario();
+        return getNombreDeUsuario();
     }
 
 
@@ -97,7 +105,7 @@ public class ValidarCampos {
      * @param codigo
      */
     public ValidarCampos(String nombre, String email, String password, String codigo) {
-        ValidarCampos.nombre = nombre;
+        ValidarCampos.nombreDeUsuario = nombre;
         ValidarCampos.email = email;
         ValidarCampos.password = password;
         ValidarCampos.codigo = codigo;
@@ -109,12 +117,12 @@ public class ValidarCampos {
      *
      * @return Encapsulamiento de todos los atributos
      */
-    public static String getNombreUsuario() {
-        return nombreUsuario;
+    public static String getNombreDeUsuario() {
+        return nombreDeUsuario;
     }
 
-    public static void setNombreUsuario(String nombreUsuario) {
-        ValidarCampos.nombreUsuario = nombreUsuario;
+    public static void setNombreDeUsuario(String nombreDeUsuario) {
+        ValidarCampos.nombreDeUsuario = nombreDeUsuario;
     }
 
     public static boolean isEsValido() {
