@@ -9,16 +9,19 @@ public class ValidarCampos {
     private static String password;
     private static String codigo = "";
     private static String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
-    public static String compruebaNombre() {
-        boolean esValido;
+
+    // Metodo para comprobar si el nombre és válido.
+    public static String compruebaNombre(String [] usuarios) {
         do {
             System.out.print("Introduce tu nombre: ");
             nombreUsuario = scanner.nextLine();
             esValido = true;
+            // Comprobamos que cumple con los requisitos.
             if (!nombreUsuario.matches("^[A-Z][a-z]+[_-]\\d{3}$") || nombreUsuario.length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 esValido = false;
             }
+            // Comprobar que no esté en uso.
             for (String n : nombres) {
                 if (n.equals(nombreUsuario)) {
                     System.out.println("El nombre ya está en uso.");
@@ -30,13 +33,14 @@ public class ValidarCampos {
         return nombreUsuario;
     }
 
-
+    // Metodo para comprobar si el email és válido.
     public static String compruebaEmail() {
         boolean esValido;
         do {
             System.out.print("Introduce tu email: ");
             email = scanner.nextLine();
             esValido = true;
+            // Comprobamos que cumple con los requisitos.
             if (!email.matches("^[a-zA-Z0-9._%+-]+@(paucasesnovescifp|yahoo|gmail|hotmail)\\.(com|es|cat)$")) {
                 System.out.println("El email no cumple con los requisitos.");
                 esValido = false;
@@ -73,6 +77,15 @@ public class ValidarCampos {
             }
         } while (!codigoUsuario.equals(codigo));
         return codigo;
+    }
+
+    // Constructor
+    public ValidarCampos(String nombreUsuario, String email, String codigo, String password, String caracteres) {
+        this.nombreUsuario = nombreUsuario;
+        this.email = email;
+        this.codigo = codigo;
+        this.password = password;
+        this.caracteres = caracteres;
     }
 }
 
