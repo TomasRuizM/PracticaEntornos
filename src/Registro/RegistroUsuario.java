@@ -15,7 +15,7 @@ public class RegistroUsuario {
     static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
 
     public static void main(String[] args) {
-        String nombre = compruebaNombre(new String[]{"Carlos"});
+        String nombre = compruebaNombre();
         String email = compruebaEmail();
         String password = compruebaPassword();
         String codigo = generaCodigoSeguridad();

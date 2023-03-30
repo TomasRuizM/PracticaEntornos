@@ -11,26 +11,29 @@ public class ValidarCampos {
     private static String caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#_-";
 
     /**
-     * @author Metodo para comprobar si el nombre és válido.
-     * @return Constructor
+     * @return Declaración de todo los atributos
+     * @author Hernan
      */
+
     public static String compruebaNombre(String [] usuarios) {
         do {
             System.out.print("Introduce tu nombre: ");
             nombreUsuario = scanner.nextLine();
             esValido = true;
             /**
-             * @author Comprobamos que cumple con los requisitos.
-             * @return Constructor
+             * @return Metodo para comprobar el nombre.
+             * @author Hernan
              */
+
             if (!nombreUsuario.matches("^[A-Z][a-z]+[_-]\\d{3}$") || nombreUsuario.length() > 16) {
                 System.out.println("El nombre no cumple con los requisitos.");
                 esValido = false;
             }
             /**
-             * @author Comprobar que no esté en uso.
-             * @return Constructor
+             * @return El nombre debe cumplir los requisitos y no debe existir.
+             * @author Hernan
              */
+
             for (String n : nombres) {
                 if (n.equals(nombreUsuario)) {
                     System.out.println("El nombre ya está en uso.");
@@ -42,16 +45,21 @@ public class ValidarCampos {
         return nombreUsuario;
     }
     /**
-     * @author Metodo para comprobar si el email és válido.
-     * @return Constructor
+     * @return Metodo para comprobar el email.
+     * @author Hernan
      */
+
     public static String compruebaEmail() {
         boolean esValido;
         do {
             System.out.print("Introduce tu email: ");
             email = scanner.nextLine();
             esValido = true;
-            // Comprobamos que cumple con los requisitos.
+            /**
+             * @return El email debe cumplir los requisitos.
+             * @author Hernan
+             */
+
             if (!email.matches("^[a-zA-Z0-9._%+-]+@(paucasesnovescifp|yahoo|gmail|hotmail)\\.(com|es|cat)$")) {
                 System.out.println("El email no cumple con los requisitos.");
                 esValido = false;
@@ -88,18 +96,6 @@ public class ValidarCampos {
             }
         } while (!codigoUsuario.equals(codigo));
         return codigo;
-    }
-
-    /**
-     * @author Hernán Sandoval
-     * @return Constructor
-     */
-    public ValidarCampos(String nombreUsuario, String email, String codigo, String password, String caracteres) {
-        this.nombreUsuario = nombreUsuario;
-        this.email = email;
-        this.codigo = codigo;
-        this.password = password;
-        this.caracteres = caracteres;
     }
 }
 
