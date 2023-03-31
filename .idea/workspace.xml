@@ -3,6 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="cad5d3a9-c32c-45e9-ab04-7574bd8be471" name="Changes" comment="Mas comentarios en la clase ValidarCampos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Registro/RegistroUsuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Registro/RegistroUsuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Registro/ValidarCampos.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Registro/ValidarCampos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Registro/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Registro/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Registro/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Registro/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/legal/jquery.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/legal/jquery.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/legal/jqueryUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/legal/jqueryUI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script-dir/jquery-3.5.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script-dir/jquery-3.5.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script-dir/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.structure.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registro/RegistroUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

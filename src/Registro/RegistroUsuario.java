@@ -7,10 +7,9 @@ import java.util.Random;
 
 import static Registro.ValidarCampos.*;
 
-
 /**
- * @author tomas
- * Clase que declara el scanner y el random.
+ * Esta clase contiene el scaner y el random, tiene tambien un main donde se usarán los metodos de la otra clase.
+ * @author Tomas
  * @version 1.0
  */
 public class RegistroUsuario {
@@ -37,9 +36,11 @@ public class RegistroUsuario {
     }
 
     /**
-     * Metodo con las sentencias que operan con los objetos de la clase ValidarCampos.
-     * Devuelve los datos introducidos por el usuario
-     *
+     * Metodo que usa los atributos y los muestra al igual que el resultado final.
+     * @param nombreUsuario
+     * @param email
+     * @param password
+     * @param codigo
      */
     private static void init(String nombreUsuario, String email, String password, String codigo) {
         System.out.println("El registro se ha realizado con éxito.");
