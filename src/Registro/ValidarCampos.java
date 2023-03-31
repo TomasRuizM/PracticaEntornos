@@ -2,18 +2,15 @@ package Registro;
 
 import static Registro.RegistroUsuario.*;
 /**
- * @author Ruben
- *
- * @return Esta clase consta de 4 metodos que pediran a partir de scaners informacion como el nombre
+ * Esta clase consta de 4 metodos que pediran a partir de scaners informacion como el nombre
  * y tendra que comprobar que el nombre no existe en la base de datos y a la vez que toda la informacion
  * introducida por teclado cumpla con el patron establecido.
  * Tambien tiene los atributos encapsulados con su respectivos constructores
+ *
+ * @author Ruben Y Hernan
+ * @version 1.0
  */
 public class ValidarCampos {
-    /**
-     * @return Declaración de todo los atributos
-     * @author Hernan
-     */
 
     private static String nombreDeUsuario;
     private static boolean esValido;
@@ -25,8 +22,8 @@ public class ValidarCampos {
     private static String[] nombres = {"Juan", "María", "Pedro", "Lucía", "Luis", "Ana", "Diego", "Laura", "Carlos", "Elena"};
 
     /**
-     * @return Metodo para comprobar el nombre.
-     * @author Hernan
+     *  Metodo para comprobar el nombre.
+     *
      */
 
     public static String compruebaNombre(String nombreDeUsuario) {
@@ -35,8 +32,8 @@ public class ValidarCampos {
             setNombreDeUsuario(scanner.nextLine());
             setEsValido(true);
             /**
-             * @return El nombre debe cumplir los requisitos y no debe existir.
-             * @author Hernan
+             *  El nombre debe cumplir los requisitos y no debe existir.
+             *
              */
 
             if (!getNombreDeUsuario().matches("^[A-Z][a-z]+[_-]\\d{3}$") || getNombreDeUsuario().length() > 16) {
@@ -55,8 +52,8 @@ public class ValidarCampos {
     }
 
     /**
-     * @return Metodo para comprobar el email.
-     * @author Hernan
+     *  Metodo para comprobar el email.
+     *
      */
 
     public static String compruebaEmail() {
@@ -65,8 +62,8 @@ public class ValidarCampos {
             setEmail(scanner.nextLine());
             setEsValido(true);
             /**
-             * @return El email debe cumplir los requisitos.
-             * @author Hernan
+             *  El email debe cumplir los requisitos.
+             *
              */
 
             if (!getEmail().matches("^[a-zA-Z0-9._%+-]+@(paucasesnovescifp|yahoo|gmail|hotmail)\\.(com|es|cat)$")) {
@@ -78,8 +75,8 @@ public class ValidarCampos {
     }
 
     /**
-     * @author Ruben
-     * @return Este metodo recoge la password y comprueba que sigue el patron recojido
+     *
+     *  Este metodo recoge la password y comprueba que sigue el patron recojido
      */
     public static String compruebaPassword() {
         do {
@@ -96,9 +93,9 @@ public class ValidarCampos {
 
 
     /**
-     * @author Ruben
      *
-     * @return Metodo que genera el codigo de seguridad y comprueba que el codigo es correcto
+     *
+     *  Metodo que genera el codigo de seguridad y comprueba que el codigo es correcto
      */
     public static String generaCodigoSeguridad() {
         for (int i = 0; i < 8; i++) {
@@ -117,9 +114,9 @@ public class ValidarCampos {
     }
 
     /**
-     * @author Ruben
      *
-     * @return El constructor de todos los atributos
+     *
+     *  El constructor de todos los atributos
      *
      * @param nombre
      * @param email
@@ -134,15 +131,14 @@ public class ValidarCampos {
     }
 
     /**
-     *
-     * @author Ruben
-     *
-     * @return Encapsulamiento de todos los atributos
+     *  Getter para el nombre
      */
     public static String getNombreDeUsuario() {
         return nombreDeUsuario;
     }
-
+    /**
+     *  Setter para el nombre
+     */
     public static void setNombreDeUsuario(String nombreDeUsuario) {
         ValidarCampos.nombreDeUsuario = nombreDeUsuario;
     }
@@ -150,39 +146,60 @@ public class ValidarCampos {
     public static boolean isEsValido() {
         return esValido;
     }
-
+    /**
+     *  Setter del atributo "EsValido"
+     */
     public static void setEsValido(boolean esValido) {
         ValidarCampos.esValido = esValido;
     }
-
+    /**
+     *  Getter para el email
+     */
     public static String getEmail() {
         return email;
     }
-
+    /**
+     *  Setter para el email
+     */
     public static void setEmail(String email) {
         ValidarCampos.email = email;
     }
-
+    /**
+     *  Getter para la password
+     */
     public static String getPassword() {
         return password;
     }
-
+    /**
+     *  Setter para la password
+     *
+     */
     public static void setPassword(String password) {
         ValidarCampos.password = password;
     }
-
+    /**
+     *  Getter para el codigo
+     */
     public static String getCodigo() {
         return codigo;
     }
-
+    /**
+     *  Setter para el codigo
+     *
+     */
     public static void setCodigo(String codigo) {
         ValidarCampos.codigo = codigo;
     }
-
+    /**
+     *  Getter para los caracteres
+     */
     public static String getCaracteres() {
         return caracteres;
     }
-
+    /**
+     *  Setter para los caracteres
+     *
+     */
     public static void setCaracteres(String caracteres) {
         ValidarCampos.caracteres = caracteres;
     }
